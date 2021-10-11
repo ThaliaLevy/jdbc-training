@@ -10,9 +10,9 @@ public class ExcluindoInfoBD {
 		ConnectionFactory cf = new ConnectionFactory();
 		Connection c = cf.conectarBD();
 		Statement state = c.createStatement();
-		boolean resultado = state.execute("DELETE FROM produto WHERE id=5;");
+		boolean resultado = state.execute("DELETE FROM produto WHERE id>5;");
 		int quantidadeModificacoes = state.getUpdateCount();
-		System.out.println("RESULTADO > " +resultado);
-		System.out.println("QUANTIDADE DE MODIFICAÇÕES > " + quantidadeModificacoes);
+		System.out.println("RESULTADO > " + resultado);
+		System.out.println("QUANTIDADE DE MODIFICACOES > " + quantidadeModificacoes);
 	}
 }
