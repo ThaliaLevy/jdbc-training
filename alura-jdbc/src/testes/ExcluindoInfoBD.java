@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
 public class ExcluindoInfoBD {
 
 	public static void main(String[] args) throws SQLException {
@@ -14,7 +13,6 @@ public class ExcluindoInfoBD {
 		boolean resultado = state.execute("DELETE FROM produto WHERE id=5;");
 		int quantidadeModificacoes = state.getUpdateCount();
 		System.out.println("RESULTADO > " +resultado);
-		System.out.println("QUANTIDADE DE MODIFICAÇÕES > " + quantidadeModificacoes);
+		System.out.println("QUANTIDADE DE MODIFICAÃ‡Ã•ES > " + quantidadeModificacoes);
 	}
-
 }
