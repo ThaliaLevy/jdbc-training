@@ -17,7 +17,7 @@ public class EvitandoSQLInjection {
 		//inserir automaticamente as alterações no banco (porém, o programa roda)
 
 		 
-		// PreparedStatement > evita sql injection, já que entende qualquer informação como string
+		//PreparedStatement > evita sql injection, já que entende qualquer informação como string
 		PreparedStatement ps = c.prepareStatement("INSERT INTO produto(nome, descricao) values (?, ?);",
 				Statement.RETURN_GENERATED_KEYS);
 		
